@@ -43,7 +43,7 @@
             // 
             // openButton
             // 
-            this.openButton.Location = new System.Drawing.Point(333, 146);
+            this.openButton.Location = new System.Drawing.Point(334, 171);
             this.openButton.Name = "openButton";
             this.openButton.Size = new System.Drawing.Size(101, 23);
             this.openButton.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(333, 234);
+            this.deleteButton.Location = new System.Drawing.Point(334, 259);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(101, 23);
             this.deleteButton.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(333, 457);
+            this.exitButton.Location = new System.Drawing.Point(334, 482);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(101, 23);
             this.exitButton.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(333, 192);
+            this.addButton.Location = new System.Drawing.Point(334, 217);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(101, 23);
             this.addButton.TabIndex = 4;
@@ -86,14 +86,14 @@
             this.shortcutListBox.FormattingEnabled = true;
             this.shortcutListBox.Items.AddRange(new object[] {
             ""});
-            this.shortcutListBox.Location = new System.Drawing.Point(3, 100);
+            this.shortcutListBox.Location = new System.Drawing.Point(3, 68);
             this.shortcutListBox.Name = "shortcutListBox";
-            this.shortcutListBox.Size = new System.Drawing.Size(288, 446);
+            this.shortcutListBox.Size = new System.Drawing.Size(311, 550);
             this.shortcutListBox.TabIndex = 5;
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(333, 321);
+            this.saveButton.Location = new System.Drawing.Point(334, 346);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(101, 23);
             this.saveButton.TabIndex = 6;
@@ -103,7 +103,7 @@
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(333, 274);
+            this.clearButton.Location = new System.Drawing.Point(334, 299);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(101, 23);
             this.clearButton.TabIndex = 8;
@@ -114,7 +114,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 58);
+            this.label1.Location = new System.Drawing.Point(12, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(264, 13);
             this.label1.TabIndex = 9;
@@ -122,7 +122,7 @@
             // 
             // loadSaveButton
             // 
-            this.loadSaveButton.Location = new System.Drawing.Point(333, 100);
+            this.loadSaveButton.Location = new System.Drawing.Point(334, 125);
             this.loadSaveButton.Name = "loadSaveButton";
             this.loadSaveButton.Size = new System.Drawing.Size(101, 23);
             this.loadSaveButton.TabIndex = 10;
@@ -132,7 +132,7 @@
             // 
             // editButton
             // 
-            this.editButton.Location = new System.Drawing.Point(333, 363);
+            this.editButton.Location = new System.Drawing.Point(334, 388);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(101, 23);
             this.editButton.TabIndex = 11;
@@ -142,7 +142,7 @@
             // 
             // helpButton
             // 
-            this.helpButton.Location = new System.Drawing.Point(333, 410);
+            this.helpButton.Location = new System.Drawing.Point(334, 435);
             this.helpButton.Name = "helpButton";
             this.helpButton.Size = new System.Drawing.Size(101, 23);
             this.helpButton.TabIndex = 12;
@@ -154,7 +154,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 563);
+            this.ClientSize = new System.Drawing.Size(467, 628);
             this.Controls.Add(this.helpButton);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.loadSaveButton);
@@ -167,6 +167,7 @@
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.openButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "shortcutManagerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shortcut Manager";

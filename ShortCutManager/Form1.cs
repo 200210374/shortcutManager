@@ -38,50 +38,27 @@ namespace ShortCutManager
         {
 
 
+            string filename = "Shortcut_Items.txt";
+            string[] lines = System.IO.File.ReadAllLines(filename);
 
-            //need to change delete
-
-         
-
-
-            for (int v = 0; v < shortcutListBox.SelectedItems.Count; v++)
+            using (System.IO.StreamWriter writer = new System.IO.StreamWriter(filename))
             {
-                shortcutListBox.Items.Remove(shortcutListBox.SelectedItems[v]);
+                foreach (string line in lines)
+                {
+                    if (!line.Contains(shortcutListBox.SelectedValue.ToString()))
+                    {
+                        writer.WriteLine(line);
+                    }
+                }
             }
-
-
-
-            shortcutListBox.Items.Remove(shortcutListBox.SelectedIndex);
-
-
+            shortcutListBox.DataSource = File.ReadAllLines("Shortcut_Items.txt");
 
         }
-
-
-
-
-
 
         private void shortcutManagerForm_Load(object sender, EventArgs e)
         {
 
-
-        
-
-
-          
-
-
         }
-          
-     
-
-
-           
-           
-
-        
-
         private void saveButton_Click(object sender, EventArgs e)
         {
             const string sPath = "Shortcut_Items.txt";
@@ -163,16 +140,20 @@ namespace ShortCutManager
 
                 File.AppendAllText(path, appendText);
 
-        //        MessageBox.Show("Shortcut added");
-
-
-
-
                 
-                    }
+
+
+                if (File.Exists("Shortcut_Items.txt"))
+                {
+                    shortcutListBox.DataSource = File.ReadAllLines("Shortcut_Items.txt");
+
+                }
+        MessageBox.Show("Shortcut added");
+
+            }
                 }
 
-        private void loadSaveButton_Click(object sender, EventArgs e)
+        public void loadSaveButton_Click(object sender, EventArgs e)
         {
             
 
